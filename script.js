@@ -72,5 +72,19 @@
 // }
 // add(-1,2);
 
-const num = Number(prompt("enter your age"));
-console.log(num);
+// const num = Number(prompt("enter your age"));
+// console.log(num);
+
+
+const sum = (a,b)=>{
+
+if(a>0 && b>0){
+    return a+b;
+}
+alert("enter positive integer");
+
+}
+
+
+const result = sum(1,-4);
+console.log(result)
