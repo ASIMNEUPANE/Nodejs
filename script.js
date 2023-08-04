@@ -76,15 +76,71 @@
 // console.log(num);
 
 
-const sum = (a,b)=>{
+// const sum = (a,b)=>{
 
-if(a>0 && b>0){
-    return a+b;
+// if(a>0 && b>0){
+//     return a+b;
+// }
+// alert("enter positive integer");
+
+// }
+
+
+// const result = sum(1,-4);
+// console.log(result)
+
+
+// const person = {
+
+//     firstName : "john",
+//     lastName : "doh",
+//   fullName : () =>{
+
+//     return person.firstName + " " + person.lastName;
+// }
+
+
+// };
+
+// console.log(person.fullName());
+
+// const car = {
+//     name : "BMW",
+// model : "2000",
+// seat : "4 seat",
+
+// carDetail : () =>{
+//     return car.name + " model is " + car.model + " and it has " + car.seat ;
+// },
+
+// seatChecker : (setNo) =>{
+// if(setNo>4){
+//     alert("This car only has 4 seat")
+//     }
+// }
+// };
+
+// console.log(car.seatChecker(5));
+
+
+
+const car = {
+    name : "BMW",
+model : 2000,
+seat : "4 seat",
+
+carDetail : () =>{
+    return car.name + " model is " + car.model + " and it has " + car.seat ;
+},
+
+seatChecker : (setNo) =>{
+if(setNo>4){
+    alert("This car only has 4 seat")
+    }
 }
-alert("enter positive integer");
+};
 
-}
+console.log(car.seatChecker(5));
 
 
-const result = sum(1,-4);
-console.log(result)
+
