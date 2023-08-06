@@ -175,28 +175,28 @@
 
 
 
-const login = {
+// const login = {
 
-userEmail : "asimneupane11@gmail.com",
-userLastname : "Neupane",
-age : 19,
-password : "Helloworld",
+// userEmail : "asimneupane11@gmail.com",
+// userLastname : "Neupane",
+// age : 19,
+// password : "Helloworld",
 
-auth : (email,pass)=>{
-    if(email != login.userEmail && pass != login.password ){
+// auth : (email,pass)=>{
+//     if(email != login.userEmail && pass != login.password ){
 
-        return alert("User not found")
-    }
-    else {
-        return alert("User LogIn succesfully")
-    }
+//         return alert("User not found")
+//     }
+//     else {
+//         return alert("User LogIn succesfully")
+//     }
 
 
-}};
-a = prompt("enter your email")
-b = prompt("enter your password")
+// }};
+// a = prompt("enter your email")
+// b = prompt("enter your password")
 
-console.log(login.auth(a,b))
+// console.log(login.auth(a,b))
 
 // const email = prompt("Enter your email address");
 // const password = prompt("Enter your password")
@@ -231,6 +231,30 @@ console.log(login.auth(a,b))
 //     }};
 
 //     login.auth()
+
+
+
+
+// array
+
+// method of array
+// length, sort ,push, pop
+// map, find, filter, reduce = Immutable js
+
+const person = [
+    {name: "ram", age : 20},
+    {name: "asim", age : 16},
+    {name: "syam", age : 17},
+    {name: "hari", age : 21},
+]
+
+const age = person.map((person)=> {return person.age});
+const age2 = person.map((person)=> person.name);
+    console.log(age)
+
+
+
+
 
    
 
