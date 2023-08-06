@@ -124,23 +124,122 @@
 
 
 
-const car = {
-    name : "BMW",
-model : 2000,
-seat : "4 seat",
+// const car = {
+//     name : "BMW",
+// model : 2000,
+// seat : "4 seat",
 
-carDetail : () =>{
-    return car.name + " model is " + car.model + " and it has " + car.seat ;
-},
+// carDetail : () =>{
+//     return car.name + " model is " + car.model + " and it has " + car.seat ;
+// },
 
-seatChecker : (setNo) =>{
-if(setNo>4){
-    alert("This car only has 4 seat")
+// seatChecker : (setNo) =>{
+// if(setNo>4){
+//     alert("This car only has 4 seat")
+//     }
+// }
+// };
+
+// console.log(car.seatChecker(5));
+
+
+
+
+
+// const car = {
+// name: "BMV",
+// model: "ceron",
+// color : "red",
+// madeyear : 2000,
+
+// carDetail : ()=>{
+// return car.name+ ' ' +car.model + ' model ' ;
+
+// },
+
+// carAge: (year)=>{
+
+// return year -car.madeyear;
+
+// }
+
+
+
+// };
+
+// console.log(car.carDetail());
+
+
+// const year =   Number( prompt("enter current year"))
+// console.log(" Your car age is " + car.carAge(year))
+
+
+
+const login = {
+
+userEmail : "asimneupane11@gmail.com",
+userLastname : "Neupane",
+age : 19,
+password : "Helloworld",
+
+auth : (email,pass)=>{
+    if(email != login.userEmail && pass != login.password ){
+
+        return alert("User not found")
     }
-}
-};
+    else {
+        return alert("User LogIn succesfully")
+    }
 
-console.log(car.seatChecker(5));
 
+}};
+a = prompt("enter your email")
+b = prompt("enter your password")
+
+console.log(login.auth(a,b))
+
+// const email = prompt("Enter your email address");
+// const password = prompt("Enter your password")
+
+// console.log(login.auth(email,password));
+
+// let em = document.getElementById('email')
+// let pas = document.getElementById('password')
+// let submit = document.getElementById('submit')
+// let y = submit.addEventListener("click", login.auth(em,pas));
+// let result = document.getElementById('result')
+
+
+
+
+
+// const login = {
+
+//     userEmail : "asimneupane11@gmail.com",
+//     password : "Helloworld",
+    
+//     auth : (em,pas)=>{
+//         if(em != login.userEmail && pas != login.password ){
+    
+//             return result.innerHTML("User not found")
+//         }
+//         else {
+//             return result.innerHTML("USer succesfully")
+//         }
+    
+    
+//     }};
+
+//     login.auth()
+
+   
+
+
+
+ 
+    
+    
+    
+   
 
 
