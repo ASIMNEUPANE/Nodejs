@@ -241,16 +241,42 @@
 // length, sort ,push, pop
 // map, find, filter, reduce = Immutable js
 
-const person = [
-    {name: "ram", age : 20},
-    {name: "asim", age : 16},
-    {name: "syam", age : 17},
-    {name: "hari", age : 21},
-]
+// const person = [
+//     {name: "ram", age : 20},
+//     {name: "asim", age : 16},
+//     {name: "syam", age : 17},
+//     {name: "hari", age : 21},
+// ]
 
-const age = person.map((person)=> {return person.age});
-const age2 = person.map((person)=> person.name);
-    console.log(age)
+// const age = person.map((person)=> {return person.age});
+// const age2 = person.map((person)=> person.name);
+//     console.log(age2)
+//     console.log(age)
+
+    // used .map beacuse it does not change original array like foreach
+
+
+// #destructuring  
+
+
+    //  ... is a spred operator is to open others
+
+    const person = {
+
+userName : "asim",
+password : "password",
+role : "Admin"
+
+    };
+        const {password, ...rest}= person;
+
+        console.log({rest});
+        console.log(person)
+
+
+
+        // method ma argument vanxa
+        // function ma parametar vanxa
 
 
 
