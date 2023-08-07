@@ -241,6 +241,10 @@
 // length, sort ,push, pop
 // map, find, filter, reduce = Immutable js
 
+
+// MAP IN ARRAAY
+
+
 // const person = [
 //     {name: "ram", age : 20},
 //     {name: "asim", age : 16},
@@ -261,22 +265,57 @@
 
     //  ... is a spred operator is to open others
 
-    const person = {
+//     const person = {
 
-userName : "asim",
-password : "password",
-role : "Admin"
+// userName : "asim",
+// password : "password",
+// role : "Admin"
 
-    };
-        const {password, ...rest}= person;
+//     };
+//         const {password, ...rest}= person;
 
-        console.log({rest});
-        console.log(person)
+//         console.log({rest});
+//         console.log(person)
 
 
 
-        // method ma argument vanxa
-        // function ma parametar vanxa
+// method ma argument vanxa
+// function ma parametar vanxa
+
+
+
+// let a1= a = [1,2,3,4,5]
+// let a2= a.map((value)=>{  //dont practice this way
+//     return value*2
+// })
+// console.log(a2)
+
+
+
+//         let a1=  [1,2,3,4,5]
+// let a2 = a1.map((a1) => a1*2 )   // this is a right way to code
+
+// console.log(a2)
+
+
+
+// FILTER IN ARRAY
+
+
+
+
+        let a1=  [1,2,3,4,5]
+let a2 = a1.filter((a1) => a1<3 )   // this is a right way to code
+
+console.log(a2)
+
+
+// reduce in js
+
+let a4 = a1.reduce((val1,val2) => val1*val2)
+    
+    console.log(a4)
+
 
 
 
