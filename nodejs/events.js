@@ -18,4 +18,4 @@ const data = "hello world";
 // add to file
 
 
-fs.appendFileSync(" ./data.txt", data);g
+fs.appendFileSync(" ./data.txt", data);
