@@ -304,17 +304,17 @@
 
 
 
-        let a1=  [1,2,3,4,5]
-let a2 = a1.filter((a1) => a1<3 )   // this is a right way to code
+//         let a1=  [1,2,3,4,5]
+// let a2 = a1.filter((a1) => a1<3 )   // this is a right way to code
 
-console.log(a2)
+// console.log(a2)
 
 
 // reduce in js
 
-let a4 = a1.reduce((val1,val2) => val1*val2)
+// let a4 = a1.reduce((val1,val2) => val1+val2)
     
-    console.log(a4)
+//     console.log(a4)
 
 
 

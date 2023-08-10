@@ -5,3 +5,4 @@ const QRd = (url)=>{
   })}
 
   module.exports =QRd ;
+  
