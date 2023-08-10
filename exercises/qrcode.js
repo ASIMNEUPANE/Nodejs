@@ -1,8 +1,8 @@
 const QRCode = require('qrcode');
 const QRd = (url)=>{
-    QRCode.toDataURL('url',    (err, url)=> {
+    QRCode.toDataURL('https://github.com/ASIMNEUPANE',    (err, url)=> {
     console.log(url)
   })}
 
-  module.exports =QRd ;
+  console.log(QRd);
   

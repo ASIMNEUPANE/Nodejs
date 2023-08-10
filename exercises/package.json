@@ -1,6 +1,12 @@
 {
   
   "dependencies": {
-    "moment": "^2.29.4"
+  
+    
+  "moment": "^2.29.4",
+  
+    
+  "qrcode": "^1.5.3"
+  
   }
 }
