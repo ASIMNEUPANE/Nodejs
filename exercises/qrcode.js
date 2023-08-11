@@ -16,6 +16,7 @@ const ht = http.createServer(async (req,res)=>{
   res.writeHead(200, { 'Content-Type': 'text/html' });
   const html =  `<img src= "${data}">  </img>`;
   res.end(html)
+  
 
 }
 )
