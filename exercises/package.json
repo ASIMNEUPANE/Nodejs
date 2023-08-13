@@ -12,6 +12,12 @@
   "moment": "^2.29.4",
   
     
+  "nodemailer": "^6.9.4",
+  
+    
+  "nodemailer-express-handlebars": "^6.1.0",
+  
+    
   "pdfkit": "^0.13.0",
   
     
