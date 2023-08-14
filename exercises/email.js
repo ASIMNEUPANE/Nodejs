@@ -1,7 +1,9 @@
 const nodemailer = require('nodemailer');
-const hbs = require('nodemailer-express-handlebars');
+const handlebars = require('handlebars');
+const { promisify } = require("util");
+const fs = require("fs");
 
-
+const readFile = promisify(fs.readFile);
 
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -15,25 +17,27 @@ const transporter = nodemailer.createTransport({
 
 
 
+  async function main(receivers, data, htmlFile) {
+    const html = await readFile(htmlFile, "utf8");
+    const template = handlebars.compile(html);
   
-async function main(receivers) {
+    const htmlToSend = template(data);
   
     const info = await transporter.sendMail({
-      from: '"Asim Neupane 👻" <asimneupane11@gmail.com>', // sender address
+      from: '"Asim Neupane👻" <asimneupane11@gmail.com>', // sender address
       to: receivers.toString(), // list of receivers
       subject: "Hello ✔", // Subject line
-      text: "Hello world?", // plain text body
-      html: "<b>Hello world?</b>", // html body
+      html: htmlToSend,
     });
   
     console.log("Message sent: %s", info.messageId);
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-  
-    //
-    // NOTE: You can go to https://forwardemail.net/my-account/emails to see your email delivery status and preview
-    //       Or you can use the "preview-email" npm package to preview emails locally in browsers and iOS Simulator
-    //       <https://github.com/forwardemail/preview-email>
-    //
   }
-  const receivers = ["asimneupane11@gmail.com","anushmakunwar61@gmail.com"]
-  main(receivers).catch(console.error);
+  
+  // Change here
+  const data = {
+    name: "Asim Neupane",
+    msg: "How are you??",
+  };
+  const htmlFile = "./index.html";
+  const receivers = ["asimneupane11@gmail.com"];
+  main(receivers, data, htmlFile).catch(console.error);
