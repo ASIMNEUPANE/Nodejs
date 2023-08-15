@@ -16,3 +16,10 @@ app.delete("/delete", function (req, res) {
 
 app.listen(3000);
 console.log("app running on port 3000");
+
+// get vnya data ligni
+// post vnya data pathauni
+// put vnya data modify/update garnu
+// patch vnya bollen value on off garni
+// delete data dlt garni
+// .write == .send
