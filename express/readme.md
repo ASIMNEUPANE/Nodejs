@@ -9,3 +9,11 @@ put vnya data modify/update garnu
 patch vnya bollen value on off garni
 delete data dlt garni
 .write == .send
+
+
+// get vnya data ligni
+// post vnya data pathauni
+// put vnya data modify/update garnu
+// patch vnya bollen value on off garni
+// delete data dlt garni
+// .write == .send
