@@ -1,9 +1,0 @@
-hello worldhello world
-
-1. use upper-case package and creat a function to convert user input to upper case 
-2. use moment package to convert current date to "8th Aug 2023" format
-
-
-3. creat a pure function that convert "mr raktim shrestha" to "Mr Raktim Shrestha"
-
-4.
