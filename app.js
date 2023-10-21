@@ -6,7 +6,7 @@ const qr = require("./qrcode");
 const { type } = require("os");
 
  const myFunction = async(req,res)=>{
-//     const dateTime = date();
+//  some date method const dateTime = date();
 // const upper = uc.upperCase("string");
 
 // const formats = format();
