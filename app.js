@@ -16,7 +16,7 @@ res.write(data);
 
 res.end();
 
-    // res.end(formats().format("dddd, MMMM Do YYYY, h:mm:ss a"));
+    // date in good formay res.end(formats().format("dddd, MMMM Do YYYY, h:mm:ss a"));
 // res.end(`Hello worldclass ${dateTime} ${upper} `);
 
 };
